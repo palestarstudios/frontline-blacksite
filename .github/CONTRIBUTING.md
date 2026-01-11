@@ -14,6 +14,9 @@ This repository exists to:
 * Enable **engine and gameplay iteration**
 * Support **modding, experimentation, and learning**
 
+> [!TIP]
+> There is already a planned an extensive modding API for Frontline: Blacksite. "Support" in this context refers to allowing the mod developer to have in-depth access to the internals without needing to decompile the game and its supporting libraries
+
 It does **not** represent:
 
 * The final feature set
