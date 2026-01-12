@@ -1,29 +1,15 @@
 ﻿using System;
 using Raylib_cs;
 using System.Numerics;
+using Blacksite.WorldConstants;
 
 class Program
 {
-    // --- Constants ---
-    const int ScreenWidth = 1280;
-    const int ScreenHeight = 720;
-
-    const float TickRate = 60f;
-    const float TickDt = 1f / TickRate;
-
-    const float Gravity = 20f;
-    const float JumpForce = 6.5f;
-
-    const float GroundAccel = 50f;
-    const float AirAccel = 15f;
-    const float MaxGroundSpeed = 7.0f;
-    const float MaxAirSpeed = 7.0f;
-    const float GroundFriction = 8.0f;
-
+    [System.STAThread]
     static void Main()
     {
-        Raylib.InitWindow(ScreenWidth, ScreenHeight, "Frontline Movement Sandbox");
-        Raylib.SetTargetFPS(0); // uncapped render FPS
+        Raylib.InitWindow(Constants.ScreenWidth, Constants.ScreenHeight, "Frontline: Blacksite");
+        Raylib.SetTargetFPS(0);
 
         Vector3 position = new Vector3(0, 1.8f, 0);
         Vector3 velocity = Vector3.Zero;
@@ -73,7 +59,7 @@ class Program
                 jumpQueued = true;
 
             // --- Fixed Tick ---
-            while (accumulator >= TickDt)
+            while (accumulator >= Constants.TickDt)
             {
                 grounded = position.Y <= 1.8f;
 
@@ -87,18 +73,18 @@ class Program
                     float speed = horizontalVel.Length();
                     if (speed > 0)
                     {
-                        float drop = speed * GroundFriction * TickDt;
+                        float drop = speed * Constants.GroundFriction * Constants.TickDt;
                         float newSpeed = MathF.Max(speed - drop, 0);
                         horizontalVel *= newSpeed / speed;
                         velocity.X = horizontalVel.X;
                         velocity.Z = horizontalVel.Y;
                     }
 
-                    Accelerate(ref velocity, wishDir, MaxGroundSpeed, GroundAccel);
+                    Accelerate(ref velocity, wishDir, Constants.MaxGroundSpeed, Constants.GroundAccel);
 
                     if (jumpQueued)
                     {
-                        velocity.Y = JumpForce;
+                        velocity.Y = Constants.JumpForce;
                         grounded = false;
                         jumpQueued = false;
                     }
@@ -110,12 +96,12 @@ class Program
                 }
                 else
                 {
-                    Accelerate(ref velocity, wishDir, MaxAirSpeed, AirAccel);
-                    velocity.Y -= Gravity * TickDt;
+                    Accelerate(ref velocity, wishDir, Constants.MaxAirSpeed, Constants.AirAccel);
+                    velocity.Y -= Constants.Gravity * Constants.TickDt;
                 }
 
-                position += velocity * TickDt;
-                accumulator -= TickDt;
+                position += velocity * Constants.TickDt;
+                accumulator -= Constants.TickDt;
             }
 
             // --- Camera ---
@@ -171,7 +157,7 @@ class Program
         if (addSpeed <= 0)
             return;
 
-        float accelSpeed = accel * wishSpeed * TickDt;
+        float accelSpeed = accel * wishSpeed * Constants.TickDt;
         if (accelSpeed > addSpeed)
             accelSpeed = addSpeed;
 
