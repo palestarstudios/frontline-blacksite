@@ -2,7 +2,7 @@ using System;
 
 namespace Blacksite.InteractiveObjects
 {
-    // The entity is a base class, everything that can be controlled by the
+    // The AbstractEntity is a base class, everything that can be controlled by the
     // physics system or by AI/the player qualifies as an entity and should
     // be extended by this base class. Examples include:
     //
@@ -13,11 +13,11 @@ namespace Blacksite.InteractiveObjects
     // - Items that have been placed by the Engineer;
     //      * Barricades
     //      * Offensive sentries
-    abstract class Entity
+    abstract class AbstractEntity
     {
         public string EntityID = Guid.NewGuid().ToString();
 
-        public Entity() {}
+        public AbstractEntity() {}
 
         public abstract void Update();
         public abstract void Draw();
