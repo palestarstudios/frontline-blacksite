@@ -6,6 +6,9 @@
 
 Welcome to the official repository for **Frontline: Blacksite**! Primary development of **Frontline: Blacksite** happens in C# with **.NET 10** as our target. Some small parts of the game may be written in other languages as needed, or when C# does not fit the bill (most often you will see Python). This repo is licensed under a special **source-available** license that can be read [right here](./LICENSE).
 
+> [!NOTE]
+> This project has two major licenses. The license in this repository governs source code and its use. The final game that you can purchase will be governed by a future End User License Agreement.
+
 We also allow and accept community contributions! More information about how you can contribute, or how your contributions will be used in the project itself, can all be found [in this helpful file](./.github/CONTRIBUTING.md).
 
 This is a modern repo, so we use modern features such as CI/CD and a lot of GitHub-specific markdown rendering, so it's recommended that you read our docs *on the GitHub site* or in a markdown renderer, not as plain text!
