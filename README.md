@@ -14,14 +14,14 @@ This is a modern repo, so we use modern features such as CI/CD and a lot of GitH
 
 **Frontline: Blacksite** is a class-based multiplayer FPS built around tight gunplay, expressive movement, and readable team roles.
 
-Matches are small, focused, and objective-driven. Yypically 6v6 with an emphasis on positioning, and teamwork rather than loadout complexity or ability spam. There are no hero ultimates, no perk trees, and no choice paralysis: what matters is teamplay, tactics, and mechanics.
+Matches are small, focused, and objective-driven. Typically 6v6 with an emphasis on positioning, and teamwork rather than loadout complexity or ability spam. There are no hero ultimates, no perk trees, and no choice paralysis: what matters is teamplay, tactics, and mechanics.
 
 The game takes inspiration from classic Valve-era shooters, combining:
 - The accessibility and clarity of Team Fortress–style class design  
 - The precision and responsiveness of peak Counter-Strike gunplay  
 - Smooth, momentum-driven movement inspired by Source-engine games  
 
-All combat takes place in off-the-books conflict zones: *blacksites*. Where deniable forces clash over territory, objectives, and control. These fights aren’t public. They aren’t sanctioned. And they don’t leave witnesses.
+All combat takes place in off-the-books conflict zones: *blacksites*, where deniable forces clash over territory, objectives, and control. These fights aren’t public. They aren’t sanctioned. And they don’t leave witnesses.
 
 **Frontline: Blacksite** is designed to be played, learned, and mastered over time. Whether on official servers or community-run ones, without aggressive monetization or live-service pressure. The only cost to *you* should be the cost of entry. Everything else is purely optional and cosmetic.
 
@@ -33,6 +33,6 @@ Soon! Right now we're in the process of joining the Steamworks Partner Program a
 
 No, and this is intentional.
 
-Public builds derived from this repository may have certain systems disabled or stubbed out. This includes functionality that depends on private infrastructure, trust assumptions, or services that are not safe to redistribute publicly. Examples include Digital Rights Management, Anti-Cheat, and the Item Economy (when implemented)
+Public builds derived from this repository may have certain systems disabled or stubbed out. This includes functionality that depends on private infrastructure, trust assumptions, or services that are not safe to redistribute publicly. Examples include: Digital Rights Management, Anti-Cheat, and the Item Economy (when implemented)
 
 These builds are intended for development, testing, and experimentation. While bug reports and reproducible issues are welcome, public builds should not be treated as representative of the live Steam release.
