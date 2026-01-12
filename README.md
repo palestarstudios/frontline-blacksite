@@ -25,6 +25,9 @@ All combat takes place in off-the-books conflict zones: *blacksites*, where deni
 
 **Frontline: Blacksite** is designed to be played, learned, and mastered over time. Whether on official servers or community-run ones, without aggressive monetization or live-service pressure. The only cost to *you* should be the cost of entry. Everything else is purely optional and cosmetic.
 
+> [!NOTE]
+> "Team Fortess", "Counter Strike", and "Source" are all property of Valve Software. We do not claim any ownership of these names
+
 ## When will this be on Steam?
 
 Soon! Right now we're in the process of joining the Steamworks Partner Program and getting all the important documents straight with Valve, the IRS & CRA before opening up a Steam Store page with our game and its art/content. It may take a couple months while certain required content (such as art, a game trailer and gameplay footage) set up for our Steam Store page!
