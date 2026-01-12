@@ -15,7 +15,7 @@ This repository exists to:
 * Support **modding, experimentation, and learning**
 
 > [!TIP]
-> There is already plans to implement an extenside modding API into Frontline: Blacksite. "Support" in this context refers to allowing the mod developer to have in-depth access to the internals without needing to decompile the game and its supporting libraries.
+> There is already plans to implement an extensive modding API into Frontline: Blacksite. "Support" in this context refers to allowing the mod developer to have in-depth access to the internals without needing to decompile the game and its supporting libraries.
 
 It does **not** represent:
 
@@ -46,8 +46,29 @@ Use the provided issue templates whenever possible.
 
 ### Community Feature Requests
 
-> [!TIP]
-> Finish this!
+Feature requests are welcome, but expectations need to be set clearly. This repository is not a roadmap voting system. Feature requests are used to:
+- Identify pain points
+- Spot recurring themes
+- Capture ideas that align with the project’s direction
+
+They are not guarantees of implementation.
+
+**Good feature requests:**
+- Clearly describe the problem being solved
+- Explain why the feature is useful, not just what it is
+- Acknowledge potential tradeoffs or complexity
+
+**Poor feature requests (likely to be closed):**
+- Requests that redesign core gameplay philosophy
+- Balance changes or class tuning without **extensive reasoning and evidence as to why this adjustment needs to occur**
+- Requests framed as demands or comparisons to other games
+
+"Wouldn’t it be cool if…" ideas without practical grounding
+
+> [!NOTE]
+> Silence on a feature request does not mean it was ignored. Many requests are tracked internally without public discussion.
+
+If a feature aligns with the project’s goals and timing, it may be revisited later in development.
 
 ---
 
