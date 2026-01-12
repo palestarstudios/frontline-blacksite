@@ -32,6 +32,8 @@ All combat takes place in off-the-books conflict zones: *blacksites*, where deni
 
 Soon! Right now we're in the process of joining the Steamworks Partner Program and getting all the important documents straight with Valve, the IRS & CRA before opening up a Steam Store page with our game and its art/content. It may take a couple months while certain required content (such as art, a game trailer and gameplay footage) set up for our Steam Store page!
 
+Right now, resources for artists are slim and the head developer is also a university student. A time for the Store Page to be open is not yet known, but it can be safely assumed that there should be a presence by June 2026. This will be updated periodically as needed to reflect events that may push back or pull forward the time of Store reveal.
+
 ## Will you release full builds on GitHub?
 
 No, and this is intentional.
