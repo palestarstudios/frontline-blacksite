@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# bz2compress.py - compress your game assets in a flash!
+# bz2compress.py - compress your assets in a flash!
 # (c) 2026 Pale Star Studios
 
 import os
@@ -9,7 +9,7 @@ import hashlib
 
 def build_assets(source_path: str, output_path: str):
     if not os.path.exists(output_path):
-        os.makedirs(output_path
+        os.makedirs(output_path)
 
     for filename in os.listdir(source_path):
         if filename.endswith(".txt"):
