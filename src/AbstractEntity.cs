@@ -15,18 +15,23 @@ namespace Blacksite.InteractiveObjects
     //      * Offensive sentries
     abstract class AbstractEntity
     {
-        public string EntityID = Guid.NewGuid().ToString();
+        private string EntityID;
 
-        public AbstractEntity() {}
+        public AbstractEntity()
+        {
+            this.EntityID = Guid.NewGuid().ToString();
+        }
 
         public abstract void Update();
         public abstract void Draw();
 
-        // Helper functions
-
+        /// <summary>
+        /// Returns the Entities base GUID as a string, usually for logging / crash dumps
+        /// </summary>
+        /// <returns>string EntityID</returns>
         protected string GetEntityGUID()
         {
-            return EntityID;
+            return this.EntityID;
         }
     }
 }
